@@ -276,8 +276,8 @@ int main(int argc, char** argv){
     if(!exists_local(local)) return 0;
     string src = safe_read_trim(local);
     if(src.empty()) return 0;
-    string tool = "ObfToolX";
-    string author = "AuthorName";
+    string tool = "obf";
+    string author = "Hoang Phuc";
     string when = __DATE__;
     string credit = make_credit_string(tool, author, when);
     string out = out_name(in);
@@ -286,3 +286,4 @@ int main(int argc, char** argv){
     do_noop_long();
     return 0;
 }
+
